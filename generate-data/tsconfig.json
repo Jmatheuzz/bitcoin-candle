@@ -1,13 +1,24 @@
 {
   "compilerOptions": {
-      "lib": [
-          "es5",
-          "es6"
-      ],
-      "target": "es5",
-      "resolveJsonModule": true,
-      "esModuleInterop": true,
-      "outDir": "./build",
-      "rootDir": "./src"
-  }
+    "incremental": true,
+    "outDir": "dist",
+    "rootDirs": ["src", "tests"],
+    "target": "es2021",
+    "sourceMap": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "baseUrl": "src",
+    "paths": {
+      "@/*": ["*"]
+    },
+    "strict": true,
+    "noImplicitOverride": true,
+    "removeComments": true,
+    "emitDecoratorMetadata": true,
+    "experimentalDecorators": true
+  },
+  "include": ["src", "tests"]
 }
