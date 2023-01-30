@@ -1,23 +1,22 @@
-import { CandleColor, Currency } from '.'
+import { CandleColor } from '.'
 
 export abstract class Candle {
   low: number
   high: number
   open: number
   close: number
-  color: CandleColor
+  color?: CandleColor
   finalDateTime?: Date
   values: number[]
-  currencyTo: Currency
+  currencyTo: string
 
-  constructor (currencyTo: Currency, color: CandleColor) {
+  constructor (currencyTo: string) {
     this.currencyTo = currencyTo
     this.low = Infinity
     this.high = 0
     this.close = 0
     this.open = 0
     this.values = []
-    this.color = color
   }
 }
 

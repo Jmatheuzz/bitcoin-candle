@@ -1,9 +1,9 @@
-import { Candle, CandleAdd, CandleClose, CandleColor, CandleGenerateColor, CandleGenerateParams, Currency, ToSimpleObject } from '@/models'
+import { Candle, CandleAdd, CandleClose, CandleGenerateColor, CandleGenerateParams, ToSimpleObject } from '@/models'
 
 export class CandleServices extends Candle implements CandleAdd, CandleClose, CandleGenerateColor, CandleGenerateParams, ToSimpleObject {
-  currency: Currency
-  constructor (currency: Currency, currencyTo: Currency, color: CandleColor) {
-    super(currencyTo, color)
+  currency: string
+  constructor (currency: string, currencyTo: string) {
+    super(currencyTo)
     this.currency = currency
   }
 
