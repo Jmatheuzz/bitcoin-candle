@@ -7,7 +7,7 @@ async function createMessageChannel() {
     try {
         const connection = await (0, amqplib_1.connect)(config_1.env.amqp);
         const channel = await connection.createChannel();
-        await channel.assertQueue(config_1.env.queue);
+        await channel.assertQueue(config_1.env.queue, { durable: true });
         return channel;
     }
     catch (err) {
