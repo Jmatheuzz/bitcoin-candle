@@ -26,25 +26,27 @@ Iniciando gerador de candles:
 
 ```
 docker-compose up
+```
 
 ```
 npm i
+```
 
 ```
 npm start
-
 ```
 #### Entre na pasta api-candle e execute:
 
 ```
 docker-compose up
+```
 
 ```
 npm i
+```
 
 ```
 npm start
-
 ```
 
 #### Entre na pasta app e execute:
@@ -64,8 +66,8 @@ npm start
 Mencione as ferramentas que você usou para criar seu projeto
 
 * [NodeJS](https://nodejs.org/en/) - Ambiente de execução Javascript server-side
-* [ReactJS](https://nodejs.org/en/) - Biblioteca Javascript para criação de interfaces de usuário
-* [Docker](https://maven.apache.org/) - Criação e gerenciamento de containers virtuais
-* [PostgresSQL](https://rometools.github.io/rome/) - Banco de dados relacional
-* [RabbitMQ](https://rometools.github.io/rome/) - Servidor de mensageria
-* [Socket.IO](https://rometools.github.io/rome/) - Biblioteca baseada em eventos de comunicação entre cliente e servidor
+* [ReactJS](https://reactjs.org/) - Biblioteca Javascript para criação de interfaces de usuário
+* [Docker](https://www.docker.com/) - Criação e gerenciamento de containers virtuais
+* [PostgresSQL](https://www.postgresql.org/) - Banco de dados relacional
+* [RabbitMQ](https://www.rabbitmq.com/) - Servidor de mensageria
+* [Socket.IO](https://socket.io//) - Biblioteca baseada em eventos de comunicação entre cliente e servidor
