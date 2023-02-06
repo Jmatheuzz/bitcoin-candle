@@ -8,8 +8,8 @@ export const dataSource = new DataSource({
   password: env.dbPassword,
   port: parseInt(env.dbPort),
   database: env.db,
-  entities: ['src/utils/database/sqlite/entities/*{.ts,.js}'],
-  migrations: ['src/utils/database/sqlite/migrations/*{.ts,.js}'],
+  entities: ['dist/utils/database/sqlite/entities/*.js'],
+  migrations: ['dist/utils/database/sqlite/migrations/*.js'],
   migrationsTableName: 'migrations',
   migrationsRun: true,
   synchronize: false
