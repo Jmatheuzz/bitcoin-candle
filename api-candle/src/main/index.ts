@@ -4,10 +4,11 @@ import express, { Request, Response } from 'express'
 import CandleMessageChannel from '@/services/consume-candle'
 import { CandleRepository, dataSource } from '@/utils/database/sqlite'
 import { env } from '@/main/config'
-import * as http from 'http'
+import cors from 'cors'
 
 const app = express()
 app.use(express.json())
+app.use(cors())
 void dataSource.initialize().then(async () => {
   const server = app.listen(env.port)
   const candleMsgChannel = new CandleMessageChannel(server)

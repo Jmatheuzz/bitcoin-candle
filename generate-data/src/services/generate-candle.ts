@@ -7,7 +7,7 @@ export async function generateCandle (): Promise<void> {
 
   if (messageChannel) {
     while (true) {
-      const loopTimes = PeriodEnum.THIRTY_SECONDS / PeriodEnum.TEN_SECONDS
+      const loopTimes = PeriodEnum.ONE_MINUTE / PeriodEnum.TEN_SECONDS
       const candle = new CandleServices('BTC', 'USD')
 
       for (let i = 0; i < loopTimes; i++) {

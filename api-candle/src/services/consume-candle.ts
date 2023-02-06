@@ -14,7 +14,7 @@ export default class CandleMessageChannel {
     this.repository = new CandleRepository()
     this._io = new Server(server, {
       cors: {
-        origin: env.socketClient,
+        origin: '*',
         methods: ['GET', 'POST']
       }
     })
@@ -42,8 +42,8 @@ export default class CandleMessageChannel {
 
         const candle: Candle = candleObj
         const ed = await this.repository.insert(candle)
-        console.log(ed)
-        this._io.emit(env.socketEvent, candle)
+        const candles = await this.repository.get()
+        this._io.emit(env.socketEvent, candles)
       })
     }
   }
