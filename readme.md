@@ -22,7 +22,7 @@ Uma série de exemplos passo-a-passo que informam o que você deve executar para
 
 Iniciando gerador de candles:
 
-#### entre na pasta generate-data e execute:
+#### Entre na pasta generate-data e execute:
 
 ```
 docker-compose up
@@ -34,7 +34,7 @@ npm i
 npm start
 
 ```
-#### entre na pasta api-candle e execute:
+#### Entre na pasta api-candle e execute:
 
 ```
 docker-compose up
@@ -47,7 +47,7 @@ npm start
 
 ```
 
-#### entre na pasta app e execute:
+#### Entre na pasta app e execute:
 
 ```
 npm i
